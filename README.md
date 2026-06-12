@@ -15,6 +15,7 @@ Repository for the master's thesis *Empirical Investigation of 5G National Roami
     └── marienborg_vaernes_marienborg/   # Mobile train corridor runs
         ├── ice/
         └── telenor/
+└── figs/                  # Figures generated from the datasets, used in the thesis
 ```
 
 ## Contents
