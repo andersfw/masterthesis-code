@@ -1,0 +1,19 @@
+[Unit]
+Description=Master thesis Speedtest logger (ICE)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/andersfw/master_thesis/python_raspi
+
+ExecStart=/usr/bin/env python3 /home/andersfw/master_thesis/python_raspi/measure_speedtest_ice.py
+Restart=always
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

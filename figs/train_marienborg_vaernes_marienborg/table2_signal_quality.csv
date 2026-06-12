@@ -1,0 +1,10 @@
+Metric,Condition,n,mean,median,std,p10,p90
+RSRP (dBm),Ice Home,1050,-91.7,-91.0,12.2,-105.0,-77.0
+RSRP (dBm),Ice Roaming,664,-89.7,-88.0,9.9,-103.8,-78.1
+RSRP (dBm),Telenor Baseline,1734,-85.4,-84.8,8.5,-96.0,-75.5
+RSRQ (dB),Ice Home,1050,-13.9,-12.4,4.3,-19.0,-11.0
+RSRQ (dB),Ice Roaming,664,-13.8,-13.6,3.8,-19.9,-8.8
+RSRQ (dB),Telenor Baseline,1734,-12.1,-11.4,3.3,-16.9,-8.4
+RSSI (dBm),Ice Home,269,-58.9,-58.4,7.9,-69.3,-51.9
+RSSI (dBm),Ice Roaming,664,-57.6,-57.4,7.6,-67.1,-48.5
+RSSI (dBm),Telenor Baseline,1734,-54.3,-53.2,8.4,-65.6,-45.0

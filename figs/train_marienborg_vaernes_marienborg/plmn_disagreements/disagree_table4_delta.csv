@@ -1,0 +1,6 @@
+Metric,Home median,Roaming median,Delta,Delta (%),Effect
+RSRP (dBm),-91.0,-88.1,2.9,3.2,improvement
+RSRQ (dB),-13.0,-13.95,-0.9,-7.3,degradation
+Download (Mbps),130.601829528227,118.66720793778785,-11.9,-9.1,degradation
+Upload (Mbps),11.967696238424718,2.174812863076757,-9.8,-81.8,degradation
+Latency (ms),50.869,63.113,12.2,24.1,degradation

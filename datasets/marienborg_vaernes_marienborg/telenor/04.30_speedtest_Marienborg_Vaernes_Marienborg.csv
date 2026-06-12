@@ -1,0 +1,5 @@
+timestamp,download,upload,ping,server_lat,server_lon,server_name,server_country,server_sponsor,server_id,server_latency,share_url,client_lat,client_lon,gps_lat,gps_lon
+2026-04-30T07:11:04.266837Z,61075965.52591731,0.0,62.884,59.9494,10.7564,Oslo,Norway,AVUR AS,18967,62.884,,59.9452,10.7559,,
+2026-04-30T07:17:27.820407Z,293100449.2706507,59085396.880990125,56.928,59.9494,10.7564,Oslo,Norway,AVUR AS,18967,56.928,http://www.speedtest.net/result/19138645147.png,59.9452,10.7559,,
+2026-04-30T08:11:08.892316Z,56691892.54756415,11507108.775983874,66.821,59.9494,10.7564,Oslo,Norway,Broadnet,11787,66.821,http://www.speedtest.net/result/19138797728.png,59.9452,10.7559,,
+2026-04-30T08:43:10.954433Z,322205291.28791034,52235294.825067505,45.263,59.9494,10.7564,Oslo,Norway,Broadnet,11787,45.263,http://www.speedtest.net/result/19138888540.png,59.9452,10.7559,,

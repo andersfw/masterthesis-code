@@ -1,0 +1,24 @@
+[Unit]
+Description=Bring up WWAN (Telenor) via ModemManager and ensure connectivity
+After=ModemManager.service network-online.target
+Wants=network-online.target
+Requires=ModemManager.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+User=root
+
+# Pin to the modem that will get the Telenor SIM (equipment id from your mmcli output)
+Environment="TARGET_IMEI=868371053827909"
+Environment="APN=telenor.smart"
+Environment="IFACE=wwan1"
+Environment="MTU=1400"
+
+ExecStart=/usr/local/sbin/wwan_up_telenor.sh
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

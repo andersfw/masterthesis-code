@@ -1,0 +1,22 @@
+[Unit]
+Description=WWAN watchdog for ICE modem
+After=ModemManager.service
+Requires=ModemManager.service
+
+[Service]
+Type=oneshot
+User=root
+Environment="NAME=ice"
+Environment="TARGET_IMEI=868371054188863"
+Environment="APN=ice.net"
+Environment="IFACE=wwan0"
+Environment="MTU=1400"
+Environment="ROUTE_METRIC=100"
+Environment="PING_IP=1.1.1.1"
+Environment="FAIL_THRESHOLD=3"
+Environment="RECOVERY_TRIES=6"
+Environment="RECOVERY_SLEEP=8"
+Environment="RECOVERY_COOLDOWN=180"
+ExecStart=/usr/local/sbin/wwan_watchdog.sh
+StandardOutput=journal
+StandardError=journal

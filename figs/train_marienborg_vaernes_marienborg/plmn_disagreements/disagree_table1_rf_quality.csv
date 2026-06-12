@@ -1,0 +1,5 @@
+Metric,Condition,n,mean,median,std,p10,p90
+RSRP (dBm),Ice HPLMN (home),249,-91.4,-91.0,10.3,-104.0,-78.0
+RSRQ (dB),Ice HPLMN (home),249,-13.8,-13.0,3.1,-19.0,-11.0
+RSRP (dBm),Telenor VPLMN (roaming),306,-89.4,-88.1,8.7,-101.4,-80.4
+RSRQ (dB),Telenor VPLMN (roaming),306,-13.8,-14.0,3.8,-19.3,-8.7

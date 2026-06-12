@@ -1,0 +1,22 @@
+[Unit]
+Description=WWAN watchdog for Telenor modem
+After=ModemManager.service
+Requires=ModemManager.service
+
+[Service]
+Type=oneshot
+User=root
+Environment="NAME=telenor"
+Environment="TARGET_IMEI=868371053827909"
+Environment="APN=telenor.smart"
+Environment="IFACE=wwan1"
+Environment="MTU=1400"
+Environment="ROUTE_METRIC=110"
+Environment="PING_IP=1.1.1.1"
+Environment="FAIL_THRESHOLD=3"
+Environment="RECOVERY_TRIES=6"
+Environment="RECOVERY_SLEEP=8"
+Environment="RECOVERY_COOLDOWN=180"
+ExecStart=/usr/local/sbin/wwan_watchdog.sh
+StandardOutput=journal
+StandardError=journal

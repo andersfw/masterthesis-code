@@ -1,0 +1,20 @@
+[Unit]
+Description=Master thesis QMI logger (Telenor)
+After=network-online.target ModemManager.service
+Wants=network-online.target
+Requires=ModemManager.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/andersfw/master_thesis/python_raspi
+
+ExecStart=/usr/bin/env python3 /home/andersfw/master_thesis/python_raspi/measure_qmicli_telenor.py
+Restart=always
+RestartSec=3
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

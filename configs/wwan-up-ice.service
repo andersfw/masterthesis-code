@@ -1,0 +1,24 @@
+[Unit]
+Description=Bring up WWAN (ICE) via ModemManager and ensure connectivity
+After=ModemManager.service network-online.target
+Wants=network-online.target
+Requires=ModemManager.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+User=root
+
+# Pin to ICE modem (equipment id / IMEI from your mmcli output)
+Environment="TARGET_IMEI=868371054188863"
+Environment="APN=ice.net"
+Environment="IFACE=wwan0"
+Environment="MTU=1400"
+
+ExecStart=/usr/local/sbin/wwan_up_ice.sh
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

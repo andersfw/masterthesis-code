@@ -1,0 +1,10 @@
+Metric,Condition,n,mean,median,std,p10,p90
+Download (Mbps),Ice Home,13,57.0,27.5,62.5,0.2,134.1
+Download (Mbps),Ice Roaming,14,112.0,97.8,105.5,8.1,272.6
+Download (Mbps),Telenor Baseline,28,63.8,34.9,70.7,0.4,170.2
+Upload (Mbps),Ice Home,13,12.8,2.3,16.2,0.0,35.1
+Upload (Mbps),Ice Roaming,14,7.6,2.2,10.1,0.0,21.2
+Upload (Mbps),Telenor Baseline,28,10.7,0.0,22.0,0.0,28.2
+Latency (ms),Ice Home,13,50.9,46.6,21.1,30.0,77.6
+Latency (ms),Ice Roaming,14,50.1,51.4,12.3,35.3,63.2
+Latency (ms),Telenor Baseline,28,57.1,57.2,22.3,31.3,84.7
