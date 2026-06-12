@@ -1,6 +1,6 @@
 # 5G National Roaming — Measurement Platform and Datasets
 
-Repository for the master's thesis *Empirical Investigation of 5G National Roaming in Norwegian Networks* (TTM4905, NTNU, 2026).
+Repository for the master's thesis *5G Connectivity and National Roaming* (TTM4905, NTNU, 2026).
 
 ## Structure
 
